@@ -1,0 +1,50 @@
+[
+  {
+    "id": "I105",
+    "postedDate": "2018.12.10",
+    "name": "Beautiful house at the center of Berlin",
+    "address": "Rosa-Luxemburg Platz 5, 10001, Berlin",
+    "cost": "230300",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+  },
+  {
+    "id": "C403",
+    "postedDate": "2019.02.19",
+    "name": "House in Lichtenberg",
+    "address": "Voltastr. 4, 10002, Berlin",
+    "cost": "400000",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+  },
+  {
+    "id": "G229",
+    "postedDate": "2017.11.20",
+    "name": "Apartments in Charlottenburg",
+    "address": "Voigstr. 20, 10003, Berlin",
+    "cost": "134000",
+    "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. "
+  },
+  {
+    "id": "A230",
+    "postedDate": "2019.07.12",
+    "name": "Steglitz dream house",
+    "address": "Sonnenallee 10004, Berlin",
+    "cost": "238940",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+  },
+  {
+    "id": "A330",
+    "postedDate": "2018.12.29",
+    "name": "Friedrichshain offer",
+    "address": "Karl-Marx-allee 115, 10005, Berlin",
+    "cost": "287300",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+  },
+  {
+    "id": "B770",
+    "postedDate": "2019.03.23",
+    "name": "Berlin-Mitte - last chance",
+    "address": "Puschkinstr. 34, Dortmund",
+    "cost": "290000",
+    "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. "
+  }
+]

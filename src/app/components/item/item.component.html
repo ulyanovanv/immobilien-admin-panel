@@ -1,0 +1,40 @@
+<div class="bg-white rounded p-3" *ngIf="item">
+  <h3 class="text-center">{{ item.name }}</h3>
+
+  <div class="app_item-component d-flex flex-column pt-2">
+    <p class="font-weight-bold font-italic">{{ item.address }}</p>
+    <p class="app_item-component_description">{{ item.description }}</p>
+
+    <div>
+      <div class="float-left">Cost:</div>
+      <div class="float-right">{{ item.cost | currency:'EUR':'symbol':'4.2-2' }}</div>
+    </div>
+
+    <div>
+      <div class="float-left">Posted date:</div>
+      <div class="float-right">{{ item.postedDate }}</div>
+    </div>
+
+    <div class="pt-2">
+      <button
+        class="float-left btn btn-sm btn-light"
+        [class.app_item-component_status-button-active]="item.status === 'declined'"
+        (click)="setStatus('declined')"
+      >
+        decline
+        <img src="../../../assets/images/decline.png" alt="decline" class="item-status-img"/>
+      </button>
+      <button
+        class="float-right btn btn-sm btn-light"
+        (click)="setStatus('approved')"
+        [class.app_item-component_status-button-active]="item.status === 'approved'"
+      >
+        approve
+        <img src="../../../assets/images/approve.png" alt="approve" class="item-status-img"/></button>
+    </div>
+  </div>
+
+  <button class="btn btn-secondary rounded mt-3">
+    <a routerLink="/home" class="text-white text-decoration-none">Return to Homepage</a>
+  </button>
+</div>

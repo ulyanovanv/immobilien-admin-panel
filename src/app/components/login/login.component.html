@@ -1,0 +1,26 @@
+
+  <div class="app_login-component d-flex flex-column justify-content-center align-content-center bg-white rounded p-3">
+    <h3 class="text-center">Sign in</h3>
+
+    <form class="app_login-form mt-4 d-flex flex-column justify-content-center"
+          (ngSubmit)="checkLoginData(checkoutForm.value)"
+          [formGroup]="checkoutForm"
+    >
+      <div class="form-group row">
+        <div class="col-12">
+          <input type="text" class="form-control" id="user" placeholder="User name" formControlName="user">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-12">
+          <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-sm btn-secondary mx-auto" >Enter</button>
+
+      <div *ngIf="isLoginError" class="alert alert-danger mt-3" role="alert">
+        Your user name or password mismatch the existing data. Try again.
+      </div>
+    </form>
+  </div>
+

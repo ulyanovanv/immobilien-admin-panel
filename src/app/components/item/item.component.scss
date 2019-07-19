@@ -1,0 +1,11 @@
+.app_item-component {
+  max-width: 500px;
+
+  &_description {
+    font-size: 0.9rem;
+  }
+
+  &_status-button-active {
+    background-color: #e2e6ea;
+  }
+}

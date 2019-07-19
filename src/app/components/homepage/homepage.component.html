@@ -1,0 +1,35 @@
+<div class="bg-white rounded p-3">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <h3 class="text-center">List Of Ownerships</h3>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-sm btn-secondary rounded float-right" (click)="logOut()">Log out</button>
+    </div>
+  </div>
+
+  <div class="app_home-component d-flex flex-row flex-wrap justify-content-center align-items-start">
+    <div *ngFor="let item of items"
+         class="app_home-component_item d-flex flex-column rounded m-2 p-2"
+         (click)="navigateToItemPage(item.id)"
+    >
+      <div>
+        <h5 class="float-left">{{ item.name }}</h5>
+        <div *ngIf="item.status" class="float-right">
+          <img
+            [src]="item.status === 'approved' ? '../../assets/approve.png' : '../../assets/decline.png'"
+            [alt]="item.status === 'approved' ? 'approved' : 'declined'"
+            [class.item-status-img]="item.status === 'approved'"
+          />
+        </div>
+      </div>
+      <p class="app_home-component_description">{{ item.description.substring(0,150) + '...' }}</p>
+      <div>
+        <div class="float-left">{{ item.cost | currency:'EUR':'symbol':'4.2-2' }}</div>
+        <div class="float-right">{{ item.postedDate }}</div>
+      </div>
+      <p class="font-weight-bold font-italic">{{ item.address }}</p>
+    </div>
+  </div>
+</div>

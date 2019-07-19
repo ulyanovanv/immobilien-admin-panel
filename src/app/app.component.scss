@@ -1,0 +1,8 @@
+.app_container {
+  overflow: auto;
+
+  @media (min-width: 992px) {
+    height: 100vh;
+  }
+}
+

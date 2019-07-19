@@ -1,0 +1,20 @@
+.app {
+  &_home-component {
+    max-width: 1000px;
+
+    &_description {
+      font-size: 0.8rem;
+    }
+
+    &_item {
+      width: 300px;
+      background-color: #f8f9fa;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #007bff;
+        color: #FFF;
+      }
+    }
+  }
+}
