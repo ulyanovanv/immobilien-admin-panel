@@ -18,7 +18,7 @@
         <h5 class="float-left">{{ item.name }}</h5>
         <div *ngIf="item.status" class="float-right">
           <img
-            [src]="item.status === 'approved' ? '../../assets/approve.png' : '../../assets/decline.png'"
+            [src]="item.status === 'approved' ? '../../assets/images/approve.png' : '../../assets/images/decline.png'"
             [alt]="item.status === 'approved' ? 'approved' : 'declined'"
             [class.item-status-img]="item.status === 'approved'"
           />

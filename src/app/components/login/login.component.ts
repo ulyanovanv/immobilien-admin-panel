@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
   }
 
   checkLoginData(customerData) {
-    const loginData = this.http.get<login[]>('/assets/login.json')
+    this.http.get<login[]>('/assets/mocks/login.json')
       .subscribe(x => {
           const isLoginRight = x.filter(it => it.user === customerData.user && it.password === customerData.password).length;
           if (isLoginRight) {

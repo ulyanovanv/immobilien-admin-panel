@@ -33,7 +33,7 @@ export class HomepageComponent implements OnInit {
   }
 
   getItems() {
-    return this.http.get<Item[]>('/assets/items.json')
+    return this.http.get<Item[]>('/assets/mocks/items.json')
       .subscribe(res => {
         this.items = res.sort( (a: Item, b: Item)  => {
           const el1 = returnDate(a.postedDate);

@@ -13,6 +13,7 @@ export class AppComponent {
   ) {}
 
   ngOnInit() {
+    console.log('here');
     const user: string = window.localStorage.getItem('user');
     const password: string = window.localStorage.getItem('password');
 
